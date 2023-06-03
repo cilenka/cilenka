@@ -18,7 +18,7 @@ html {
 body {
   background-color: $bg;
   color: white;
-  font-family: "Cutive Mono", monospace;
+  font-family: "Cutive Mono", 'Courier New', Courier, monospace;;
   letter-spacing: .15rem;
   margin: 0;
 }
@@ -136,10 +136,11 @@ header {
   justify-content: flex-end;
   align-items: center;
   h1 {
-    font-family: 'VTKS CONTACT', sans-serif;
+    font-family: 'VTKS CONTACT', 'Courier New', Courier, monospace;
     font-size: 65px;
     letter-spacing: .6rem;
     text-align: center;
+    text-transform: uppercase;
   }
   h4 {
     color: $header;

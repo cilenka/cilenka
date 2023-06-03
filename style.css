@@ -11,7 +11,7 @@ html {
 body {
   background-color: #202020;
   color: white;
-  font-family: "Cutive Mono", monospace;
+  font-family: "Cutive Mono", "Courier New", Courier, monospace;
   letter-spacing: 0.15rem;
   margin: 0;
 }
@@ -140,10 +140,11 @@ header {
   align-items: center;
 }
 header h1 {
-  font-family: "VTKS CONTACT", sans-serif;
+  font-family: "VTKS CONTACT", "Courier New", Courier, monospace;
   font-size: 65px;
   letter-spacing: 0.6rem;
   text-align: center;
+  text-transform: uppercase;
 }
 header h4 {
   color: #DB3A34;
