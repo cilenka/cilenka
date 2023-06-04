@@ -5,6 +5,7 @@ $bg: #202020;
 $header: #DB3A34;
 $link: #5bc0be;
 $link-h: #FFC857;
+$credits: #696969;
 
 
 * {
@@ -193,19 +194,49 @@ section#shows {
   background-size: cover;
   background-position: bottom;
   color: white;
-  ul {
-    list-style: none;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.shows {
+  list-style: none;
+  text-align: left;
+  &__item {
+    display: flex;
+    margin: 30px 0;
+    gap: 30px;
+  }
+  &__date span {
+    background-color: white;
+    color: black;
+    font-weight: 600;
   }
 }
 
 
-footer {
+.contact {
   text-align: center;
-  padding: 100px 30px;
+  padding: 100px 30px 0 30px;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.credits {
+  display: flex;
+  justify-content: flex-end;
+  p {
+    margin: 0;
+    font-size: 12px;
+    color: $credits;
+  }
+  &__logo {
+    vertical-align: text-bottom;
+  }
 }
 
 .cards {
+  margin-bottom: 50px;
   @media screen and (min-width: 650px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -258,6 +289,13 @@ footer {
       }
     }
   }
+}
+
+section#history {
+  background-color: gray;
+  background-image: linear-gradient(rgba(32, 32, 32, 1), rgba(0, 0, 0, 1));
+  background-size: cover;
+  box-shadow: 5px 9px 10px -9px rgba(0, 0, 0, 0.9);
 }
 
 .gallery {

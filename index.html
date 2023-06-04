@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Cílená nejistota</title>
     <script src="index.js" type="module"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta property="og:title" content="Cílená nejistota" />
+    <meta property="og:description" content="MAXIMÁLNÍ PÓDIOVÁ SHOW SINCE 2007" />
+    <meta property="og:image" content="img/og_image.png" />
   </head>
   <body>
     <div class="top">
@@ -65,10 +72,27 @@
       <section id="shows">
         <div class="container">
         <h2>Nadcházející koncerty</h2>
-        <ul>
-          <li>něco</li>
-          <li>něco</li>
-          <li>něco</li>
+        <ul class="shows">
+          <li class="shows__item">
+            <div class="shows__date"><span>21.6.</span></div> 
+            <div class="shows__place">Ledárny Bráník / <a href="https://www.facebook.com/events/862060388562082">předkapela Chinaski</a></div>
+          </li>
+          <li class="shows__item">
+            <div class="shows__date"><span>28.8.</span></div>
+            <div class="shows__place">základna Běstvina / seznamovák VŠCHT</div>
+          </li>
+          <li class="shows__item">
+            <div class="shows__date"><span>5.9.</span></div>
+            <div class="shows__place">základna Běstvina / seznamovák VŠCHT</div>
+          </li>
+          <li class="shows__item">
+            <div class="shows__date"><span>23.9.</span></div>
+            <div class="shows__place">areál besední restaurace U Ritschellů / Aber Sometimes Fest</div>
+          </li>
+          <li class="shows__item">
+            <div class="shows__date"><span>21.10.</span></div>
+            <div class="shows__place">Malostranská Beseda</div>
+          </li>
         </ul>
         </div>
       </section>
@@ -177,11 +201,22 @@
         </div>
       </section>
     </main>
-    <footer id="contact">
+    <footer id="contact" class="contact">
       <div class="container">
         <h2>KONTAKT</h2>
         <p>Láďa Karda +420 724 187 865</p>
         <p><a href="mailto:ladakarda@gmail.com">ladakarda@gmail.com</a></p>
+      </div>
+      <div class="container credits">
+        <p>
+          Created by<a href="https://koderka.netlify.app" title="Kodérka" target="_blank">
+            <svg class="credits__logo" width="14" height="14" viewbox="0 0 16 16" alt="Kodérka">
+              <path
+                d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" fill="dimgrey"
+              />
+            </svg>
+          </a>
+        </p>
       </div>
     </footer>
   </body>
