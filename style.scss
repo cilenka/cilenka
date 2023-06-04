@@ -266,6 +266,9 @@ footer {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    flex-direction: row;
+  }
   li {
     width: 40vw;
     flex-grow: 1;
@@ -278,6 +281,16 @@ footer {
       width: auto;
       height: 40vh;
     }
+    @media (max-aspect-ratio: 1/1) {
+      height: 30vh;
+    }
+    @media (max-height: 480px) {
+      height: 80vh;
+    }
+    @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+      height: auto;
+      width: 100%;
+    }
   }
   img {
     width: 100%;
@@ -287,37 +300,7 @@ footer {
       max-height: 100%;
       min-width: 100%;
     }
-  }
-  // ADVANCED
-
-  // Portrait
-
-  @media (max-aspect-ratio: 1/1) {
-    li {
-      height: 30vh;
-    }
-  }
-
-  // Short screens
-
-  @media (max-height: 480px) {
-    li {
-      height: 80vh;
-    }
-  }
-
-  // Smaller screens in portrait
-
-  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-    ul {
-      flex-direction: row;
-    }
-
-    li {
-      height: auto;
-      width: 100%;
-    }
-    img {
+    @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
       width: 100%;
       max-height: 75vh;
       min-width: 0;
