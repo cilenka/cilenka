@@ -40,3 +40,13 @@ window.onscroll = function() {
     navbar.classList.remove('scrolled')
   }
 }
+
+
+// full height of header for mobile devices
+
+const documentHeight = () => {
+  const doc = document.documentElement
+  doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+};
+window.addEventListener('resize', documentHeight);
+documentHeight();

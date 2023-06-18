@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat&display=swap");
 @import url("https://fonts.cdnfonts.com/css/vtks-contact");
+:root {
+  --doc-height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -137,7 +141,7 @@ a:hover {
 
 .top {
   text-align: center;
-  height: 100vh;
+  height: var(--doc-height);
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(img/band/cilenka5.jpg);
   background-size: cover;
   background-position: center;
@@ -151,10 +155,10 @@ a:hover {
 
 header {
   display: flex;
-  height: 100vh;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  height: 100%;
 }
 header h1 {
   font-family: "VTKS CONTACT", "Courier New", Courier, monospace;
@@ -420,7 +424,6 @@ section#history {
   }
 }
 .grid__image {
-  height: 100%;
   max-width: 200px;
   display: block;
   margin: auto;
@@ -441,10 +444,12 @@ section#history {
 .bmc-btn {
   font-size: 16px !important;
   display: flex !important;
+  padding: 0 !important;
 }
 @media screen and (min-width: 650px) {
   .bmc-btn {
     font-size: 24px !important;
+    padding: 0 24px !important;
   }
 }
 .bmc-btn-text {
